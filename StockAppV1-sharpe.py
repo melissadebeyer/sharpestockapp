@@ -39,7 +39,7 @@ today = datetime.date.today()
 def user_input_features():
     start_date = st.sidebar.text_input("Start Date", '2021-10-10')
     end_date = st.sidebar.text_input("End Date", f'{today}')
-    tickerlist=st.sidebar.multiselect('Which stocks would you like to include in the Sharpe ratio analysis?',stocks, ['ASML','DSM'])
+    tickerlist=st.sidebar.multiselect('Which stocks would you like to include in the Sharpe ratio analysis?',stocks, ['ASML.AS','DSM.AS','ADYEN.AS'])
     return start_date, end_date, tickerlist
 
 start, end, tickerlist = user_input_features()
