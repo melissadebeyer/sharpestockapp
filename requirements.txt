@@ -1,0 +1,10 @@
+yfinance
+streamlit
+datetime 
+pandas
+requests
+pyportfolioopt
+altair
+yahoofinancials
+requests
+Pillow
