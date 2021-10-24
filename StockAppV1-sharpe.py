@@ -22,7 +22,7 @@ from PIL import Image
 # In[2]:
 
 
-stocks=['AALB','ABN','ACCEL','ADYEN','AGN','AJAX','AKZA','ALFEN','ALLFG','AMG','ACOMO','APAM','ARCAD','DSM',MT','ASM','ASML','ASRNL','RDSA','SBMO','SIFG','TWEKA','TOM2','URW','UMG','VLK','WHA','WKL']
+stocks=['AALB','ABN','ACCEL','ADYEN','AGN','AJAX','AKZA','ALFEN','ALLFG','AMG','ACOMO','APAM','ARCAD','DSM','MT','ASM','ASML','ASRNL','RDSA','SBMO','SIFG','TWEKA','TOM2','URW','UMG','VLK','WHA','WKL']
 
 
 # In[3]:
