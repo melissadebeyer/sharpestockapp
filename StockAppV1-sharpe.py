@@ -22,7 +22,7 @@ from PIL import Image
 # In[2]:
 
 
-stocks=['AALB','ABN','ACCEL','ADYEN','AGN','AJAX','AKZA','ALFEN','ALLFG','AMG','ACOMO','APAM','ARCAD','DSM','MT','ASM','ASML','ASRNL','RDSA','SBMO','SIFG','TWEKA','TOM2','URW','UMG','VLK','WHA','WKL']
+stocks=['AALB','ABN','ACCEL','ADYEN','AGN','AJAX','AKZA','ALFEN','ALLFG','AMG','ACOMO','APAM','ARCAD','MT','ASM','ASML','ASRNL','BSGR','BFIT','BESI','BBED','BRNL','CMCOM','CCEP','CRBN','DPA','ECMPA','FLOW','FFARM','FUR','GLPG','HEIJM','HDG','HYDRA','IMCD','INGA','INTER','JDEP','TKWY','KENDR','AD','BAMNB','DSM','KPN','PHIA','VPK','NEDAP','NEWAY','NN','OCI','ORDI','PSH','PHARM','PNL','RAND','BOKA','RDSA','SBMO','SIFG','LIGHT','SLIGR','STRN','TFG','TWEKA','TOM2','URW','UMG','VLK','WHA','WKL']
 
 
 # In[3]:
@@ -39,7 +39,7 @@ today = datetime.date.today()
 def user_input_features():
     start_date = st.sidebar.text_input("Start Date", '2021-10-10')
     end_date = st.sidebar.text_input("End Date", f'{today}')
-    tickerlist=st.sidebar.multiselect('Which stocks would you like to include in the Sharpe ratio analysis?',stocks, ['ASML','ADYEN','DSM'])
+    tickerlist=st.sidebar.multiselect('Which stocks would you like to include in the Sharpe ratio analysis?',stocks, ['ASML','DSM'])
     return start_date, end_date, tickerlist
 
 start, end, tickerlist = user_input_features()
