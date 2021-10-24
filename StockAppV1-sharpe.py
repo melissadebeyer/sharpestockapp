@@ -37,13 +37,12 @@ st.sidebar.header('User Input Parameters')
 
 today = datetime.date.today()
 def user_input_features():
-    symbol = st.sidebar.text_input("Ticker", 'AAPL')
     start_date = st.sidebar.text_input("Start Date", '2021-10-10')
     end_date = st.sidebar.text_input("End Date", f'{today}')
     tickerlist=st.sidebar.multiselect('Which stocks would you like to include in the Sharpe ratio analysis?',stocks, ['ASML','ADYEN','DSM'])
     return symbol, start_date, end_date, tickerlist
 
-symbol, start, end, tickerlist = user_input_features()
+start, end, tickerlist = user_input_features()
 
 
 start1 = pd.to_datetime(start)
