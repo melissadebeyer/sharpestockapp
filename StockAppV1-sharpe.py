@@ -30,8 +30,8 @@ stocks=['AALB','ABN','ACCEL','ADYEN','AGN','AJAX','AKZA','ALFEN','ALLFG','AMG','
 
 st.title("MNB's stock analysis app")
 st.markdown("The graphs and tables below can be used to determine an optimal stock portfolio based on the Sharpe ratio and will give you detailed information on any given stock")
-image = Image.open(r'C:\Users\melis\Pictures\wallstphoto.jpg')
-st.image(image)
+#image = Image.open(r'C:\Users\melis\Pictures\wallstphoto.jpg')
+#st.image(image)
 
 st.sidebar.header('User Input Parameters')
 
